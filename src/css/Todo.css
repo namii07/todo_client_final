@@ -1,0 +1,19 @@
+.todolist{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+ 
+}
+.box{
+
+    display: flex;
+    justify-content: center;
+    gap:10px;
+
+}
+.button{
+    width:100px;
+    
+}
