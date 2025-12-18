@@ -108,7 +108,7 @@ const TodoList = () => {
   //create
   const postTodo = async () => {
     try {
-      await axios.post("http://localhost:5000/csbs/addtodo", { todo })
+      await axios.post("https://todo-server-ec2-czcf.onrender.com/csbs/addtodo", { todo })
       setTodo('')
       setStatus(true)
       getTodo()
@@ -120,7 +120,7 @@ const TodoList = () => {
 
   //read
   const getTodo = async () => {
-    await axios.get("http://localhost:5000/csbs/gettodo")
+    await axios.get("https://todo-server-ec2-czcf.onrender.com/csbs/gettodo")
       .then((response) => {
         setTodoArray(response.data)
       })
